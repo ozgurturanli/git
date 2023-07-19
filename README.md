@@ -10,11 +10,17 @@ git config --global user.name "Name Surname"
 git config --global user.email "name.surname@domain.com"
 ```
 
+to list the configuration:
+
+```
+git config --list
+```
+
 ## 01. Create a Repository
 
 Assume that we have a project folder `MyApp` and we would like to create a repository.
 
-In the folder "MyApp" run the following command:
+In the folder `MyApp` run the following command:
 
 ```
 git init
