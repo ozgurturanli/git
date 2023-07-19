@@ -68,3 +68,7 @@ git add style.css
 git commit -m "Changes for index.html and style.css"
 ```
 Separating staging and committing, you get the chance to easily customize what goes into a commit.
+
+# Additional Resources
+1. [Official Git Documentation](https://git-scm.com/doc)
+2. [![Git and GitHub for Beginners - Crash Course](https://img.youtube.com/vi/RGOj5yH7evk/maxresdefault.jpg)](https://youtu.be/RGOj5yH7evk)
