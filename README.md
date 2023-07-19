@@ -12,32 +12,53 @@ git config --global user.email "name.surname@domain.com"
 
 ## 01. Create a Repository
 
-Assume that we have a project folder "MyApp" and we would like to create a repository.
+Assume that we have a project folder `MyApp` and we would like to create a repository.
 
 In the folder "MyApp" run the following command:
 
 ```
 git init
 ```
-## 02. Add the page to the repository
+## 02. Add the Page to the Repository
 
 ```
 git add index.html
 git commit -m "First Commit"
 ```
-## 03. Checking the status of the repository
+## 03. Checking the Status of the Repository
 
 ```
 git status
 ```
 
-git status command is used to keep monitoring the states of both the working directory and the repository.
+`git status` command is used to keep monitoring the states of both the working directory and the repository.
 
 ## 04. Making changes
 
-Assume that you made some changes in the index.html file and would like to stage them.
+Assume that you made some changes in the `index.html` file and would like to stage them.
 
-## 05. Staging the changes
+## 05. Staging the Changes
 ```
 git add index.html
 ```
+`git add` command is used to add the changes to the staging area.
+
+## 06. Staging & Committing
+Suppose that you worked on 2 files `index.html` and `style.css`.
+
+If you would like to commit separately, so that you can have different messages and the traceablity, you may do the following:
+
+```
+git add index.html
+git commit -m "Changes for index.html"
+git add style.css
+git commit -m "Changes for style.css"
+```
+
+If you don't need separate commits, you could also do it like this:
+```
+git add index.html
+git add style.css
+git commit -m "Changes for index.html and style.css"
+```
+Separating staging and committing, you get the chance to easily customize what goes into a commit.
